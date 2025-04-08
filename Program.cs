@@ -8,6 +8,7 @@ class Program
         Add(3, 6);
         Subtract(23, 12);
         Multiply(4, 7);
+        Divide(12, 5);
     }
 
     static void Add(int x, int y)
@@ -26,5 +27,15 @@ class Program
     {
         Console.WriteLine($"\n{x} * {y}");
         Console.WriteLine($"Product: {x * y}");
+    }
+
+    static void Divide(decimal x, decimal y)
+    {
+        Console.WriteLine($"\n{x} / {y}");
+        if (y != 0)
+            Console.WriteLine($"Quotient: {x / y:F2}");
+        else
+            Console.WriteLine("Cannot divide by zero.");
+
     }
 }
