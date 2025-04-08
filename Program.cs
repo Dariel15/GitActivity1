@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello! This is my initial program");
+        Add(3, 6);
+    }
+
+    static void Add(int x, int y)
+    {
+        Console.WriteLine($"\n{x} + {y}");
+        Console.WriteLine($"Sum: {x + y}");
+    }
+}
