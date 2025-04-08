@@ -7,6 +7,7 @@ class Program
         Console.WriteLine("Hello! This is my initial program");
         Add(3, 6);
         Subtract(23, 12);
+        Multiply(4, 7);
     }
 
     static void Add(int x, int y)
@@ -19,5 +20,11 @@ class Program
     {
         Console.WriteLine($"\n{x} - {y}");
         Console.WriteLine($"Difference: {x - y}");
+    }
+
+    static void Multiply(int x, int y)
+    {
+        Console.WriteLine($"\n{x} * {y}");
+        Console.WriteLine($"Product: {x * y}");
     }
 }
