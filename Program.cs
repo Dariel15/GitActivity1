@@ -8,6 +8,7 @@ class Program
         Add(3, 6);
         Subtract(23, 12);
         Multiply(4, 7);
+        Addrevert(23, 15);
     }
 
     static void Add(int x, int y)
@@ -26,5 +27,10 @@ class Program
     {
         Console.WriteLine($"\n{x} * {y}");
         Console.WriteLine($"Product: {x * y}");
+    }
+    static void Addrevert(int x, int y)
+    {
+        Console.WriteLine($"\n{x} + {y}");
+        Console.WriteLine($"Sum: {x + y}");
     }
 }
